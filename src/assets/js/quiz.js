@@ -21,14 +21,14 @@ $(document).ready(function() {
     const quizTime = 75;
     const questions = [
         question_1 = {
-            textContent: "Commonly used data types DO NOT include:",
+            textContent: "In the JavaScript, which one of the following is not considered as an error:",
             options: [
-                "strings",
-                "booleans",
-                "alert",
-                "numbers"
+                "Syntax error",
+                "Missing of semicolons",
+                "Division by zero",
+                "Missing of Bracket"
             ],
-            answer: "alert"
+            answer: "Division by zero"
         },
 
         question_2 = {
@@ -43,36 +43,36 @@ $(document).ready(function() {
         },
 
         question_3 = {
-            textContent: "Arrays in JavaScript can be used to store _____.",
+            textContent: "Which of the following type of a variable is volatile?",
             options: [
-                "numbers and strings",
-                "other arrays",
-                "booleans",
-                "all of the above"
+                "Mutable variable",
+                "Volatile variable",
+                "Dynamic variable",
+                "Immutable variable"
             ],
-            answer: "all of the above"
+            answer: "Mutable variable"
         },
 
         question_4 = {
-            textContent: "String values must be enclosed within _____ when being assigned to variables.",
+            textContent: "Which of the following variables takes precedence over the others if the names are the same?",
             options: [
-                "commas",
-                "curly brackets",
-                "quotes",
-                "parentheses"
+                "Global variable",
+                "The local element",
+                "The two of the above",
+                "None of the above"
             ],
-            answer: "quotes"
+            answer: "The local element"
         },
 
         question_5 = {
-            textContent: "A very useful tool used during development and debugging for printing content to the debugger is:",
+            textContent: "When interpreter encounters an empty statements, what it will do:",
             options: [
-                "JavaScript",
-                "terminal / bash",
-                "for loops",
-                "console log"
+                "Shows a warning",
+                "Prompts to complete the statement",
+                "Throws an error",
+                "Ignores the statements"
             ],
-            answer: "console log"
+            answer: "Ignores the statements"
         }
     ];
 
@@ -121,9 +121,9 @@ $(document).ready(function() {
 
         $(contElement).empty();
 
-        var header = $("<header><h1>Coding Quiz Challenge</h1></header>");
-        var paragraph = $("<p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize yuour score/time by ten seconds.</p>")
-        var button = $("<button id=\"start-quiz-btn\" type=\"button\" class=\"btn btn-purple\">Start Quiz</button>")
+        var header = $("<header><h1>Javacscript Coding Quiz Challenge</h1></header>");
+        var paragraph = $("<p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score & time by ten seconds. Have fun!</p>")
+        var button = $("<button id=\"start-quiz-btn\" type=\"button\" class=\"btn btn-purple\">Start Quiz!</button>")
 
         $(contElement).append(header, paragraph, button);
 
@@ -202,8 +202,8 @@ $(document).ready(function() {
 
         $("#initials-submit").on("click", function(event) {
             event.preventDefault();
-            // Even though the Current State Is not Initial
-            // we set it here so we can go back to the beginning from the Back Button in the Leadeboard
+            // even though the current state is not initial
+            // here it is so we can go back to the beginning from the back button in the leadeboard
             currState = appStates.Initial;
 
             var inputInitials = $("#initials").val();

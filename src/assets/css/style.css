@@ -1,7 +1,7 @@
 /* added css styling to html page */
 
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Permanent Marker', cursive;
     box-sizing: border-box;
     text-align: center;
     font-size: 17px;
@@ -48,7 +48,7 @@ li {
     top: 0;
     left: 1em;
     clear: both;
-    color: lime;
+    color: #CFCFCF;
 }
 
 #timer {
@@ -57,7 +57,7 @@ li {
     top: 0;
     right: 1em;
     clear: both;
-    color: lime;
+    color: #CFCFCF;
 }
 
 #highscore-list {
