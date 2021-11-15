@@ -34,12 +34,12 @@ $(document).ready(function() {
         question_2 = {
             textContent: "The condition in an if / else statement is enclosed within _____.",
             options: [
-                "quotes",
-                "curly brackets",
-                "parentheses",
-                "square brackets"
+                "Quotes",
+                "Curly brackets",
+                "Parentheses",
+                "Square brackets"
             ],
-            answer: "parentheses"
+            answer: "Parentheses"
         },
 
         question_3 = {
@@ -73,6 +73,29 @@ $(document).ready(function() {
                 "Ignores the statements"
             ],
             answer: "Ignores the statements"
+        },
+
+        question_6 = {
+            textContent: "Which of the following givenfunctions of the Number Object formats a number with a different number of digits to the right of the decimal?",
+            options: [
+                "toExponential()",
+                "toFixed()",
+                "toPrecision()",
+                "toLocaleString()"
+            ],
+            answer: "toFixed()"
+        },
+
+        question_7 = {
+            textContent: "In JavaScript, what will be used for calling the function definition expression:",
+            options: [
+                "Function prototype",
+                "Function literal",
+                "Function calling",
+                "Function declaration"
+
+            ],
+            answer: "Function literal"
         }
     ];
 
